@@ -1,0 +1,113 @@
+/* Overall Page Design */
+.reader-board-page-no-sidebar {
+  padding: 30px;
+  min-height: 100vh;
+  background-color: #f5f6fa;
+  font-family: 'Arial', sans-serif;
+  color: #2c3e50;
+}
+
+/* Header Design */
+.header {
+  display: flex;
+  justify-content: space-between; /* Space between header title and filters */
+  align-items: center;
+  margin-bottom: 30px;
+  padding-bottom: 15px;
+}
+
+.header h1 {
+  font-size: 28px;
+  color: #a5a4b4cc;
+  margin: 0;
+}
+
+/* Dropdown Filters Reduced Size and Right-aligned */
+.filters {
+  display: flex;
+  justify-content: flex-end; /* Move filters to the right */
+  gap: 10px; /* Space between dropdowns */
+  margin-bottom: 20px;
+  width: auto;
+}
+
+.filters select {
+  padding: 8px; /* Reduced padding for smaller dropdowns */
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-width: 120px; /* Further reduced minimum width of dropdowns */
+}
+
+.filters select:hover {
+  border-color: #aeacc0;
+  background-color: #f0f3f7;
+}
+
+/* Table Design */
+.reader-list {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.reader-list table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  margin-top: 30px;
+}
+
+.reader-list th, .reader-list td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  font-size: 16px;
+}
+
+.reader-list th {
+  background-color: #e2e4eb;
+  color: BLACK;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-left: 600 dp;
+}
+
+.reader-list td {
+  background-color: white;
+  color: #8D88BBCC;
+  transition: background-color 0.3s ease;
+}
+
+.reader-list tr:hover td {
+  background-color: #f0f3f7;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .header {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .filters {
+      width: 100%;
+      justify-content: flex-start; /* Align dropdowns to the left on smaller screens */
+  }
+
+  .filters select {
+      width: 100%; /* Full width on small screens */
+  }
+
+  .reader-list table {
+      font-size: 14px;
+  }
+
+  .reader-list th, .reader-list td {
+      padding: 10px;
+  }
+}

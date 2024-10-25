@@ -1,0 +1,60 @@
+/* Main content container */
+.main-content {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: white;
+    overflow-y: auto;
+}
+
+/* Header styles */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Header title styles */
+.header h2 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Session list container */
+.session-list {
+    display: flex;
+    justify-content: flex-start; /* Align the sessions to the left */
+    gap: 50px; /* Space between columns */
+    margin-right: auto; /* Push list to the left */
+    width: auto; /* Adjust width to fit content */
+}
+
+/* Individual session column */
+.session-column {
+    display: flex;
+    flex-direction: column;
+    width: 100%; /* Full width for each column */
+    gap: 20px; /* Space between session items */
+}
+
+/* Session item styles */
+.session-item {
+    background-color: #f4f4f4;
+    padding: 15px 30px; /* Increased padding for larger buttons */
+    border-radius: 12px; /* Slightly larger border-radius for a rounded effect */
+    font-size: 20px; /* Increased font size for better readability */
+    color: #333;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1); /* Slightly larger shadow for more prominence */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    white-space: nowrap; /* Prevent text from wrapping */
+    overflow: hidden; /* Hide overflow text */
+    text-overflow: ellipsis; /* Add ellipsis (...) for overflow text */
+    min-width: 250px; /* Added minimum width for buttons */
+}
+
+/* Hover effect for session items */
+.session-item:hover {
+    background-color: #e0e0e0;
+    transform: translateY(-2px);
+}

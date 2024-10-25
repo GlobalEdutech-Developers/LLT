@@ -1,0 +1,264 @@
+
+
+/* Flexbox container for page layout */
+.page-container {
+    display: flex;
+    height: 100vh; /* Full viewport height */
+}
+
+/* Sidebar styles */
+.sidebar {
+    width: 250px; /* Set width of sidebar */
+    background-color: #f4f4f4;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    transition: width 0.3s ease; /* Smooth transition for sidebar resizing */
+}
+
+/* Content area */
+.content {
+    flex: 1;
+    padding: 20px;
+    overflow: auto; /* Allow scrolling if content overflows */
+}
+
+/* Full-screen container */
+.cbt-container {
+    width: 100%;
+    max-width: 800px; /* Optional: limit max width */
+    height: auto; /* Allow height to adjust based on content */
+    margin: 20px auto; /* Center align container and add margin */
+    padding: 20px;
+    background-color: #f4f4f4; /* Set background color */
+    border-radius: 8px;
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+    overflow: auto; /* Allow scrolling if content overflows */
+    position: relative; /* Ensure positioning context for play/pause button */
+    transition: all 0.3s ease; /* Smooth transition for dynamic changes */
+    border: none; /* Removed border */
+}
+
+/* Centering text */
+h1, p {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Centering image */
+.image-container {
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative; /* Ensure positioning context for play/pause icon */
+}
+
+.cbt-image {
+    max-width: 100%;
+    max-height: 300px; /* Reduced max-height for images */
+    height: auto;
+    transition: transform 0.3s ease; /* Smooth zoom effect */
+}
+
+/* Zoom effect on image hover */
+.image-container:hover .cbt-image {
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Play/Pause icon */
+.audio-button {
+    display: block;
+    width: 150px; /* Adjust width to match the check button */
+    padding: 10px;
+    margin: 10px auto;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.audio-button:hover {
+    background-color: #0056b3;
+}
+
+/* Flexbox for questions */
+.questions {
+    display: flex;
+    flex-direction: column;
+    background-color: #f4f4f4; /* Set background color for the questions container */
+    padding: 20px;
+    border: none; /* Removed border */
+}
+
+/* Margin for questions */
+.question {
+    margin-bottom: 15px;
+}
+
+/* Styling for labels */
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* .answer-line styling for blank spaces between question text */
+.answer-line {
+    display: inline-block;
+    width: 80px; /* Adjust the width of the blank space */
+    border-bottom: 1px solid #000; /* Creates an underline effect */
+    text-align: center; /* Centers the answer */
+    font-weight: bold; /* Makes the answer bold */
+    min-width: 50px;
+}
+
+/* Unified button styles */
+button {
+    display: block;
+    width: 150px; /* Adjust width to match the check button */
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 20px auto;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+/* Specific color for Submit button (Green) */
+.submit-button {
+    background-color: #28a745; /* Green */
+}
+
+.submit-button:hover {
+    background-color: #218838;
+}
+
+/* Specific color for Finish button (Red) */
+.finish-button {
+    background-color: #dc3545; /* Red */
+}
+
+.finish-button:hover {
+    background-color: #c82333;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Buttons for navigation (Previous, Next) */
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+/* Next button styles */
+.next-button {
+    background-color: #270872fb; /* Next button color */
+}
+
+.next-button:hover {
+    background-color: #1d056b; /* Darker shade for hover */
+}
+
+/* Result styles */
+.result {
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.result.correct {
+    color: #28a745;
+}
+
+.result.incorrect {
+    color: #dc3545;
+}
+
+/* Modal Styling */
+.modal {
+    display: block; /* Show the modal */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+    background-color: #f4f4f4;
+    margin: 15% auto; /* Centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%; /* Reduced width */
+    max-width: 500px; /* Set a max width */
+    height: auto; /* Auto height to adjust based on content */
+    max-height: 90vh; /* Ensure modal doesn't go off screen */
+    overflow-y: auto; /* Allow scrolling if content exceeds height */
+    box-sizing: border-box;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    .sidebar {
+        width: 200px;
+    }
+}
+
+@media (max-width: 768px) {
+    .page-container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        box-shadow: none;
+    }
+
+    .content {
+        padding: 10px;
+    }
+
+    .cbt-container {
+        padding: 10px;
+        margin: 10px auto;
+    }
+
+    .check-button {
+        padding: 10px 14px;
+        font-size: 14px;
+    }
+
+    .cbt-image {
+        max-height: 150px; /* Further reduce image size for smaller screens */
+    }
+
+    .modal-content {
+        width: 80%;
+        margin: 25% auto;
+        padding: 15px;
+    }
+}

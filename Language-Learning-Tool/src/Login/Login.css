@@ -1,0 +1,171 @@
+/* General page styles */
+.login-page {
+  display: flex;
+  height: 100vh;
+  font-family: 'Arial', sans-serif;
+  background: #eee; /* Light gray background for the entire page */
+  align-items: stretch;
+  justify-content: stretch;
+}
+
+/* Left-side graphic section */
+.left-side {
+  flex: 1;
+  background: 
+    url('/src/assets/firstpagejpg/Asset 2@4x.png') no-repeat center center, /* Second background image */
+    url('/src/assets/firstpagejpg/Asset 16@4x.png') no-repeat center center, /* First background image */
+    #3a2e85; /* Purple background */
+  background-size: cover, cover; /* Ensure the images cover the entire container */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  overflow: hidden;
+}
+
+.left-side .graphic {
+  max-width: 90%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+/* Right Side */
+.right-side {
+  flex: 1;
+  background: url('src/assets/firstpagejpg/Asset 13@4x.png') no-repeat center center; /* Set the background image */
+  background-size: cover; /* Ensure it covers the entire container */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  overflow: hidden;
+}
+
+/* Login Container */
+.login-container {
+  width: 400px;
+  max-width: 800px;
+  padding: 20px;
+  background: transparent; /* Background set to transparent */
+  box-shadow: none; /* No shadow */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Logo Section */
+.logo-section1 {
+  width: 80%;
+  height: 200px; /* Increased height for more space around the logo */
+ /* Logo background */
+  background-size: 80%; /* Slightly larger background size relative to the container */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.logo {
+  width: 100px;
+}
+
+.logo-section img {
+  width: 150px; /* Adjust the logo size if needed */
+  height: auto;
+}
+/* Form section styles */
+.form-section h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+/* Form group styling */
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 16px;
+  color: #333;
+  margin-top: 20px;
+}
+
+/* Input fields styling */
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.form-group input:focus {
+  border-color: #4b4b93;
+  outline: none;
+}
+
+/* Password container */
+.password-container {
+  position: relative;
+}
+
+/* Password input with space for icon */
+.password-container input {
+  padding-right: 40px;
+}
+
+/* Toggle password icon */
+.toggle-password {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #4b4b93;
+}
+
+.toggle-password i {
+  font-size: 18px;
+}
+
+/* Error message styling */
+.error {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.error-message {
+  color: red;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* Button styling */
+button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #4b4b93;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #3a3a7a;
+}
+
+/* Signup text styling */
+.signup-text {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #333;
+}

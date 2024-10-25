@@ -1,0 +1,199 @@
+/* General container styling */
+.vocabulary-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f4f4f4;
+  padding: 20px;
+  box-sizing: border-box;
+  min-height: 100vh;
+  margin-left: 200px;
+}
+
+/* Header styling */
+.vocabulary-header h2 {
+  font-size: 24px;
+  color: #4a4a4a;
+  margin-bottom: 10px; /* Reduced margin for a tighter look */
+  text-align: center;
+}
+
+/* Layout styling */
+.vocabulary-layout {
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  background-color: #f4f4f4;
+  padding: 20px; /* Reduced padding for a tighter layout */
+  border-radius: 15px;
+  margin-top: 10px; /* Reduced margin */
+  transition: all 0.3s ease;
+}
+
+.vocabulary-layout:hover {
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12); /* Softer shadow */
+  transform: translateY(-2px); /* Subtle hover movement */
+}
+
+/* Image section */
+.vocabulary-image {
+  flex: 1;
+  padding-right: 15px; /* Reduced padding */
+}
+
+.vocabulary-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.vocabulary-image img:hover {
+  transform: scale(1.05); /* Slight zoom effect */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Add shadow on hover */
+}
+
+/* Content section */
+.vocabulary-content {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Word section */
+.vocabulary-word-section {
+  margin-bottom: 15px; /* Reduced margin */
+}
+
+.word {
+  font-size: 32px; /* Slightly smaller */
+  color: #333;
+  font-weight: bold;
+}
+
+.part-of-speech {
+  font-size: 16px; /* Reduced font size */
+  color: #007bff;
+  margin-top: 5px;
+}
+
+/* Meaning and example sections */
+.vocabulary-description {
+  margin-bottom: 15px; /* Reduced margin */
+}
+
+.meaning-section, .example-section {
+  margin-bottom: 8px; /* Reduced margin */
+}
+
+.meaning-section h3, .example-section h3 {
+  margin-bottom: 2px; /* Reduced margin */
+  font-size: 18px; /* Slightly smaller */
+  color: #333;
+}
+
+.meaning-section p, .example-section p {
+  font-size: 16px;
+  color: #555;
+}
+
+/* Buttons section */
+.vocabulary-buttons {
+  display: flex;
+  gap: 10px; /* Reduced gap */
+  margin-bottom: 15px; /* Reduced margin */
+}
+
+.pos-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px; /* Reduced padding */
+  border-radius: 8px; /* Smaller border radius */
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  font-size: 15px;
+}
+
+.pos-button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.pos-button:focus {
+  outline: 2px solid #0056b3;
+}
+
+/* Recording, play and stop icons */
+.icon-section {
+  display: flex;
+  justify-content: center;
+  gap: 15px; /* Reduced gap */
+  margin-bottom: 15px; /* Reduced margin */
+}
+
+.icon-mic, .icon-play, .icon-stop {
+  font-size: 34px; /* Slightly smaller */
+  cursor: pointer;
+  transition: color 0.3s, transform 0.2s;
+}
+
+.icon-mic:hover, .icon-play:hover, .icon-stop:hover {
+  color: #0056b3;
+  transform: scale(1.15); /* Slightly more interactive hover */
+}
+
+/* Progress bar styling */
+.progress-bar-container {
+  margin-top: 15px; /* Reduced margin */
+  text-align: center;
+}
+
+.progress-text {
+  margin-bottom: 5px; /* Reduced margin */
+  font-size: 15px; /* Slightly smaller */
+  font-weight: bold;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 16px; /* Slightly smaller */
+  background-color: #e0e0e0;
+  border-radius: 8px; /* Smaller border radius */
+  overflow: hidden;
+}
+
+.progress {
+  height: 100%;
+  background-color: #28a745;
+  transition: width 0.4s ease;
+}
+
+/* Submit button */
+.submit-section {
+  margin-top: 15px; /* Reduced margin */
+  text-align: right;
+}
+
+.submit-button {
+  background-color: #28a745;
+  color: white;
+  padding: 10px 20px; /* Reduced padding */
+  border: none;
+  border-radius: 8px; /* Smaller border radius */
+  cursor: pointer;
+  font-size: 15px; /* Slightly smaller */
+  transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.submit-button:hover {
+  background-color: #218838;
+  transform: scale(1.05);
+}
+
+.submit-button:disabled {
+  background-color: #a5d6a7;
+  cursor: not-allowed;
+}

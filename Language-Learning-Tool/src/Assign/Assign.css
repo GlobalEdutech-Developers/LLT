@@ -1,0 +1,161 @@
+/* General styling for the assign page */
+.assign-page {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center; /* Center the content horizontally */
+  padding: 20px;
+  background-color: #f5f5f5; /* Light background color */
+  min-height: 100vh; /* Minimum height to cover full viewport */
+  margin-left: 160px; /* Adjust the margin to accommodate the sidebar */
+}
+
+/* Sidebar styling */
+.sidebar {
+  width: 160px; /* Decreased sidebar width */
+  background-color: #333; /* Sidebar background color */
+  color: #fff; /* Text color in the sidebar */
+  padding: 20px;
+  position: fixed; /* Fixed position for sidebar */
+  height: 100vh; /* Full height for sidebar */
+  display: flex;
+  flex-direction: column;
+  top: 0;
+  left: 0;
+}
+
+/* Create Assignment Section */
+.create-assign-container {
+  position: relative; /* Position relative to parent to handle dropdown positioning */
+  margin-bottom: 20px; /* Added margin below the button */
+  margin-top: 20px;
+}
+
+/* Create Assignment Button */
+.create-assign-button {
+  background-color: #007bff; /* Button background color */
+  color: white; /* Button text color */
+  border: none;
+  border-radius: 4px; /* Rounded corners */
+  padding: 10px 20px; /* Padding around the button */
+  cursor: pointer;
+  font-size: 1rem; /* Font size for button text */
+  display: flex; /* Align text and icon vertically */
+  align-items: center;
+  transition: background-color 0.3s; /* Smooth hover transition */
+}
+
+/* Dropdown icon */
+.create-assign-button .dropdown-icon {
+  margin-left: 8px; /* Space between button text and icon */
+}
+
+/* Hover effect for Create Assignment Button */
+.create-assign-button:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}
+
+/* Dropdown Menu Styling */
+.assign-dropdown-menu {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  position: absolute;
+  top: 100%; /* Position dropdown below the button */
+  left: 0;
+  background-color: #fff; /* White background for the dropdown */
+  border: 1px solid #ddd; /* Light border for the dropdown */
+  border-radius: 4px; /* Rounded corners for the dropdown */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+  padding: 10px 0; /* Padding inside the dropdown */
+  width: 190px; /* Width of the dropdown menu */
+  z-index: 1000; /* Ensure dropdown appears above other content */
+}
+
+/* Dropdown menu items */
+.assign-dropdown-menu a {
+  padding: 10px 15px; /* Padding for each dropdown item */
+  color: #333; /* Text color for the dropdown items */
+  text-decoration: none; /* Remove underline from links */
+  font-size: 0.9rem; /* Font size for dropdown items */
+  transition: background-color 0.2s; /* Smooth hover effect */
+  display: block; /* Ensure full-width clickable area */
+}
+
+/* Hover effect for dropdown items */
+.assign-dropdown-menu a:hover {
+  background-color: #f0f0f0; /* Light grey background on hover */
+}
+
+/* Assignments grid layout */
+.assignments-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive grid layout */
+  gap: 20px;
+  width: 100%;
+  max-width: 1000px;
+}
+
+/* Assignment cards */
+.assignment-card {
+  background-color: white;
+  border: 1px solid #4a90e2; /* Blue border to match the image */
+  border-radius: 10px;
+  padding: 20px;
+  position: relative;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+}
+
+/* Assignment title */
+.assignment-title {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Learners count */
+.learners-count {
+  color: #4a90e2; /* Blue text color */
+  margin-bottom: 10px;
+}
+
+/* Task and due info styling */
+.tasks-info {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+/* Tasks count */
+.tasks-count {
+  font-size: 1.1em;
+  margin-bottom: 5px;
+}
+
+/* Task due date info */
+.task-due-info p {
+  margin: 5px 0;
+}
+
+/* Arrow icon for each assignment */
+.arrow-icon {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 1.5em;
+  color: #4a90e2;
+  cursor: pointer;
+}
+
+/* Mobile responsiveness for smaller screens */
+@media (max-width: 768px) {
+  .create-assign-button {
+    width: 100%; /* Full width button for mobile */
+  }
+
+  .assign-dropdown-menu {
+    width: 100%; /* Full width dropdown menu for mobile */
+  }
+
+  .sidebar {
+    width: 140px; /* Further reduce sidebar width on smaller screens */
+  }
+}

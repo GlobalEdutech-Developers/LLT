@@ -1,0 +1,176 @@
+/* Overall Assignment Report Container */
+.assignment-report-container {
+    padding: 20px;
+    margin-left: 300px;
+    max-width: 80%;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+}
+
+/* Title Styling */
+.assignment-dashboard-title {
+    margin-left: 250px;
+    font-size: 26px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Button Container */
+.button-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+button + button {
+    margin-left: 10px;
+}
+
+/* Button Styling */
+button {
+    padding: 8px 12px;
+    background-color: white;
+    color: #333;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Button Hover Effects */
+button:hover {
+    background-color: #f4f4f4;
+    border-color: #888;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+}
+
+/* Report Content */
+.report-content {
+    margin-top: 20px;
+    max-width: 80%;
+    margin-left: auto;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 14px;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f1f3f5;
+    font-weight: bold;
+}
+
+td {
+    background-color: white;
+    color: #333;
+}
+
+/* Progress Bar */
+.progress-bar {
+    width: 100%;
+    height: 18px;
+    background-color: #e9ecef;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+.progress {
+    height: 100%;
+    background-color: #28a745;
+    border-radius: 10px;
+}
+
+/* Heatmap Grid */
+.heatmap-grid {
+    display: flex;
+    flex-direction: column;
+    max-width: 80%;
+    margin-left: 40px;
+}
+
+.heatmap-row {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.student-name {
+    width: 140px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #444;
+}
+
+.heatmap-cell {
+    width: 20px;
+    height: 20px;
+    background-color: #f3f3f3;
+    margin: 2px;
+    transition: background-color 0.3s;
+}
+
+.heatmap-cell.completed {
+    background-color: #28a745;
+}
+
+.heatmap-cell:hover {
+    background-color: #007bff;
+}
+
+/* Download Icon */
+.download-icon {
+    font-size: 24px;
+    color: #3d3b3b;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: color 0.3s, transform 0.2s;
+}
+
+.download-icon:hover {
+    color: #007bff;
+    transform: scale(1.1);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .assignment-dashboard-title {
+        margin-left: 0;
+    }
+
+    .button-container {
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .report-content, .heatmap-grid {
+        max-width: 100%;
+    }
+
+    table th, table td {
+        font-size: 12px;
+        padding: 10px;
+    }
+}

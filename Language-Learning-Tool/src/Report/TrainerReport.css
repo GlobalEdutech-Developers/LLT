@@ -1,0 +1,90 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.chart-container {
+  width: 80%; /* Increase the container width */
+
+  margin-left: 50px;
+}
+
+.report-controls {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.report-controls label {
+  margin-right: 10px;
+}
+
+.report-controls select {
+  margin-left: 10px;
+  padding: 5px;
+}
+
+.trainer-select {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.trainer-select label {
+  margin-right: 10px;
+}
+
+.trainer-select select {
+  padding: 5px;
+}
+
+.report-details {
+  margin-top: 20px;
+}
+
+table {
+  width: 80%;
+  margin: 20px auto;
+  border-collapse: collapse;
+}
+
+table, th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.download-icon {
+  font-size: 24px;
+  color: #2196F3;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.download-icon:hover {
+  color: #0b78d6;
+}
+
+/* Increased size of images in the application */
+img {
+  max-width: 150%; /* Allow images to scale up to 150% of their container */
+  height: auto; /* Maintain the aspect ratio */
+}
+
+.chart-container img,
+.report-details img {
+  width: 100%; /* Set image width to 100% of the container */
+  max-width: 500px; /* Set a maximum width for larger displays */
+  height: auto; /* Maintain aspect ratio */
+  display: block;
+  margin: 10px auto; /* Center the image */
+}

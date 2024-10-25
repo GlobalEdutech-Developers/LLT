@@ -1,0 +1,144 @@
+/* Container to hold the two sections */
+.learning-session-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 40px;
+  margin-left: 250px;
+}
+
+/* Task list section (left half) */
+.task-list-section {
+  flex: 1;
+  padding-right: 20px;
+  /* Removed the border-right to make the middle line invisible */
+  min-width: 50%;
+}
+
+/* Main content area (right half) */
+.details-section {
+  flex: 1;
+  padding-left: 20px;
+  min-width: 50%;
+}
+
+/* Page title and subtitle styling */
+.page-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #34495e;
+  margin-bottom: 20px;
+}
+
+.subtitle {
+  font-size: 20px;
+  color: #7f8c8d;
+  margin-bottom: 20px;
+}
+
+/* Pick all section */
+.pick-all-section {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.pick-all-section input {
+  margin-right: 10px;
+}
+
+/* Video list section */
+.video-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.video-item {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.video-item:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.video-item input {
+  margin-right: 15px;
+}
+
+.video-item label {
+  font-size: 18px;
+}
+
+/* Eye icon styling - make it blue and adjust size */
+.eye-icon {
+  font-size: 24px;
+  color: #1e63e9;
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+/* Placeholder content on the right */
+.right-sidebar {
+  background-color: #f7f7f7;
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.placeholder-content {
+  text-align: center;
+}
+
+.placeholder-content img {
+  width: 100px;
+  margin-bottom: 20px;
+}
+
+.placeholder-content p {
+  font-size: 16px;
+}
+
+/* Button container adjustments */
+.create-task-button1 {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 200px;
+  background: none;
+  /* Removed the margin-left to ensure it's centered below */
+
+  /* Added padding to give space below */
+  padding-bottom: 40px;
+}
+
+/* Button styling */
+.create-task-button1 button {
+  background-color: #486ff4;
+  color: white;
+  border: none;
+  padding: 10px 40px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 16px;
+  white-space: nowrap;
+  box-shadow: none;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.create-task-button1 button:hover {
+  background-color: #365dcf;
+}
+
+.create-task-button1 button:active {
+  background-color: #274bb8;
+}

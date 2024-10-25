@@ -1,0 +1,198 @@
+/* Reset default margin and padding */
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Reader board container styling */
+.reader-board {
+  padding: 20px;
+  font-family: 'Roboto', sans-serif;
+  max-width: 1500px;
+  margin: 0 auto;
+  margin-left: 250px; /* Adjust this value to move the container to the right */
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background-color: #f7f9fc; /* Light background */
+  border-radius: 8px;
+  box-shadow: 0 2px 10px #3a2e85;
+}
+
+/* Header styling */
+.headers {
+  display: flex;
+  justify-content: flex-end; /* Align dropdown and button to the right */
+  align-items: center;
+  margin-bottom: 20px;
+  background-color: #ebedf3;
+  padding: 15px;
+  border-radius: 8px;
+  gap: 10px; /* Reduced gap between dropdown and button */
+}
+
+/* Adjust Create Button and Dropdown */
+.create-button {
+  padding: 10px 15px; /* Slightly reduced padding */
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  background-color: white;
+  color: black;
+  border: 2px solid #89888a;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.level-dropdown {
+  font-size: 16px;
+  padding: 8px 12px; /* Adjusted padding to match button size */
+  border: 2px solid #89888a;
+  border-radius: 4px;
+  background-color: #ffffff;
+  color: #333;
+  transition: border-color 0.3s;
+}
+
+.level-dropdown:hover {
+  border-color: #1e1f1f;
+}
+
+/* Content area styling */
+.content {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* Cards container */
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Adjust card width */
+  gap: 80px; /* Increased gap between cards */
+  justify-content: center;
+}
+
+/* Book card styling */
+.book-card {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #ffffff;
+  box-shadow: 0 4px 16px rgba(141, 136, 187, 0.8); /* Initial shadow */
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+  padding: 15px; /* Adjust padding */
+  height: 180px; /* Card height */
+}
+
+.book-card:hover {
+  transform: translateY(-10px); /* Increased translate effect */
+  box-shadow: 0 12px 24px rgba(100, 100, 150, 0.5), /* Darker shadow */
+              0 6px 12px rgba(100, 100, 150, 0.3); /* Lighter shadow for depth */
+}
+
+/* Book image */
+.book-image {
+  width: 100px; /* Reduced width of the book image */
+  height: 150px; /* Reduced height of the book image */
+  object-fit: cover; /* Ensures the image doesn't get distorted */
+  border-radius: 4px;
+}
+
+/* Book title */
+.book-title {
+  flex: 1;
+  padding: 20px;
+  font-size: 20px; /* Adjust font size */
+  font-weight: bold;
+  color: #333;
+  text-align: left;
+}
+
+/* Book detail section */
+.book-detail {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #f7f9fc;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* Book detail title */
+.book-detail-title {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.book-detail-title h1 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Book detail image */
+.book-detail-image img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Back button styling */
+.back-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  background-color: #ff6347; /* Tomato red */
+  color: white;
+  border-radius: 4px;
+  margin-top: 30px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.back-button:hover {
+  background-color: #e5533b;
+  transform: scale(1.05);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .content {
+    flex-direction: column;
+  }
+
+  .book-detail {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .book-detail-title {
+    padding-right: 0;
+  }
+
+  .book-detail-image img {
+    max-width: 100%;
+  }
+}
+

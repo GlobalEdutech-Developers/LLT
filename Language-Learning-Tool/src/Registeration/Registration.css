@@ -1,0 +1,145 @@
+/* General styles for the registration page */
+.register-page {
+  display: flex;
+  height: 100vh;
+}
+
+.left-side {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f7f7f7; /* Light background color */
+}
+
+.graphic {
+  max-width: 100%;
+  height: auto;
+}
+
+.right-side {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff; /* White background for the form */
+}
+
+.register-container {
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.logo-section {
+ 
+    width: 70%;
+    height: 150px; /* Increased height for more space around the logo */
+    background: url('src/assets/firstpagejpg/Asset 11@4x.png') no-repeat center center; /* Logo background */
+    background-size: 70%; /* Slightly larger background size relative to the container */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+
+.logo {
+  width: 0px; /* Adjust size */
+  height: auto; /* Maintain aspect ratio */
+}
+
+
+.form-section h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333; /* Dark text color */
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #555; /* Medium text color */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+  border-color: #007bff; /* Blue border on focus */
+  outline: none; /* Remove default outline */
+}
+
+.password-wrapper,
+.confirmpassword-wrapper {
+  position: relative;
+}
+
+.password-toggle-icon,
+.confirmpassword-toggle-icon {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #007bff; /* Icon color */
+}
+
+.error {
+  color: red; /* Red text color for errors */
+  font-size: 0.9em;
+  margin-top: 5px;
+}
+
+.error-message {
+  color: red;
+  text-align: center;
+  margin-top: 10px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff; /* Button background color */
+  color: white; /* Button text color */
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+.login-text {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.login-text span {
+  cursor: pointer;
+  color: #007bff; /* Blue text for login link */
+  text-decoration: underline;
+}
+
+.login-text span:hover {
+  color: #0056b3; /* Darker blue on hover */
+}

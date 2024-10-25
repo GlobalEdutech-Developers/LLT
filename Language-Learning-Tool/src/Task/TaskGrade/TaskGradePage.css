@@ -1,0 +1,184 @@
+/* Body styling to prevent overflow and ensure no horizontal scrolling */
+body {
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    margin: 0; /* Remove default margins */
+}
+
+/* Container for the grade content */
+.grade-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full view height */
+}
+
+/* Main content layout */
+.main-content {
+    flex-grow: 1;
+    padding: 20px 40px; /* Standard padding */
+    padding-left: 60px; /* Extra space on the left */
+    background-color: transparent;
+    overflow-y: auto;
+    overflow-x: hidden; /* Prevent horizontal scrolling within main content */
+}
+
+/* Grid layout for content items */
+.content-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns for content */
+    gap: 90px;
+    margin-left: 0px; /* No margin to avoid overflow */
+    padding-left: 200px; /* Space between the sidebar and grid */
+}
+
+/* Header for the page */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+    margin-left: 520px; /* Centering the header */
+    margin-right: auto;
+    text-align: center;
+}
+
+/* Style for the header text */
+.header h2 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Sidebar styling */
+.sidebar {
+    margin-right: 90px; /* Add margin to the right of the sidebar */
+}
+
+/* Individual content item (cards) */
+.content-item {
+    background-color: #d3d3d3; /* Light gray background */
+    padding: 50px 80px; /* Padding inside the cards */
+    border-radius: 30px; /* Rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    text-align: left;
+    transition: transform 0.2s ease-in-out;
+    display: flex;
+    flex-direction: column; /* Ensure heading is on top */
+    justify-content: flex-start;
+    width: 100%;
+    height: 250px; /* Height for the cards */
+}
+
+/* Hover effect for the cards */
+.content-item:hover {
+    transform: translateY(-5px); /* Lift card on hover */
+}
+
+/* Card header styling */
+.content-item h3 {
+    margin: 0 0 20px 0; /* Space between header and content */
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* Flex layout for card content */
+.content-item-content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+/* Card image styling */
+.content-item img {
+    width: 120px; /* Image width */
+    height: 120px; /* Image height */
+    margin-right: 20px; /* Space between image and text */
+    flex-shrink: 0;
+}
+
+/* List styling within the cards */
+.content-item ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+/* List items inside the cards */
+.content-item ul li {
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: #000; /* Black text color */
+}
+
+/* Add bullet point before list items */
+.content-item ul li::before {
+    content: "•";
+    color: #3a2e85; /* Blue bullet point */
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+/* Style for list items with inline styling (clickable) */
+.content-item ul li[style] {
+    cursor: pointer;
+    color: black; /* Black text color */
+    text-decoration: underline; /* Underlined */
+}
+
+/* Form for assigning tasks */
+.task-class-form {
+    background-color: #f9f9f9; /* Light background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Form group styling */
+.form-group {
+    margin-bottom: 15px;
+}
+
+/* Label styling */
+.form-group label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+/* Input and select fields in the form */
+#task,
+#class {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Button styling for GO button */
+.go-button {
+    background-color: #ffffff; /* White background for GO button */
+    color: #486ff4; /* Blue text for GO button */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 300px;
+    font-size: 16px;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover effect for GO button */
+.go-button:hover,
+.go-button:active {
+    background-color: #486ff4; /* Blue background on hover */
+    color: #ffffff; /* White text on hover */
+}

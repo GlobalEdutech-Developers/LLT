@@ -1,0 +1,130 @@
+
+/* Main content area */
+.grade11-main-content {
+  width: 100%;
+  max-width: 1400px; /* Max width for larger screens */
+  background: #ffffff; /* White background for content area */
+  overflow: hidden; /* Prevent overflow from rounded corners */
+  margin-left: 150px;
+}
+
+/* Header styling */
+.grade11-header {
+  padding: 20px;
+  text-align: center;
+  color: white; /* Header text color */
+}
+
+/* Grid layout for content items */
+.grade11-content-grid {
+  display: grid;
+  grid-template-columns: repeat(32, 1fr); /* Two cards per row */
+  gap: 40px; /* Increased space between the cards */
+  justify-items: flex-start; /* Align items in the grid to the left */
+  max-width: 1400px; /* Increased max width for a wider layout */
+  margin-left: 300px; /* Move the entire grid further left */
+}
+
+/* Individual content item styling */
+.grade11-content-item {
+  background: #ffffff; /* White background for items */
+  border: 1px solid #ddd; /* Light border */
+  border-radius: 8px;
+  overflow: hidden; /* Prevent overflow from rounded corners */
+  transition: transform 0.3s, box-shadow 0.5s; /* Smooth hover effects */
+  background-color: #d3d3d3;
+}
+
+.grade11-content-item:hover {
+  transform: translateY(-5px); /* Slight lift effect on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Stronger shadow on hover */
+}
+
+/* Content item header styling */
+.grade11-content-item h3 {
+  margin: 0;
+  padding: 10px;
+  color: rgb(5, 2, 2); /* Text color for item headers */
+}
+
+/* Content item content styling */
+.grade11-content-item-content {
+  display: flex; /* Use flexbox for alignment */
+  padding: 15px;
+}
+
+/* Text section for content */
+.grade11-content-text {
+  flex: 1; /* Allow text section to take available space */
+  text-align: left; /* Align text to the left */
+}
+
+/* Image styling */
+.grade11-content-item-content img {
+  width: 150px; /* Reduce image width */
+  height: 150px; /* Reduce image height */
+  margin-right: 40px;
+  flex-shrink: 0;
+}
+
+/* Link list styling */
+.grade11-content-item-content ul {
+  list-style: none; /* Remove default list styling */
+  padding: 0;
+  margin: 10px 0 0; /* Margin to space out from the image */
+}
+
+/* Individual link styling */
+.grade11-link {
+  margin: 5px 0; /* Space between links */
+  cursor: pointer; /* Pointer cursor for links */
+  color: #020407; /* Link color */
+  text-decoration: underline; /* Underline links */
+}
+
+/* Modal overlay styles */
+.grade11-video-modal-overlay,
+.grade11-pdf-modal-overlay {
+  position: fixed; /* Fixed positioning */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8); /* Dark background for modals */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999; /* Ensure modal is on top */
+}
+
+/* Modal content styles */
+.grade11-video-modal-content,
+.grade11-pdf-modal-content {
+  background: white; /* White background for modals */
+  width: 80%; /* Modal width */
+  height: 80%; /* Modal height */
+  border-radius: 8px; /* Rounded corners */
+  position: relative; /* Positioning for close button */
+}
+
+/* Close button styling */
+.grade11-close-video-modal,
+.grade11-close-pdf-modal {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #e74c3c; /* Red background */
+  color: white; /* White text */
+  border: none;
+  border-radius: 50%; /* Circular button */
+  width: 30px;
+  height: 30px;
+  cursor: pointer; /* Pointer cursor */
+  font-weight: bold; /* Bold text */
+  font-size: 16px; /* Font size */
+}
+
+.grade11-close-video-modal:hover,
+.grade11-close-pdf-modal:hover {
+  background: #c0392b; /* Darker red on hover */
+}

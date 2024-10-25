@@ -1,0 +1,143 @@
+.task-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.task-page h1 {
+  font-size: 2.5em;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.create-task-container {
+  position: relative;
+  display: inline-block;
+  margin-left: 1rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.create-task-button {
+  background-color: #f0f2fc;
+  color: #2c2c2c;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  align-items: center;
+  box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+  margin-right: 900px;
+}
+
+.create-task-button:hover {
+  background-color: #e0e3f7;
+}
+
+.dropdown-icon {
+  font-size: 12px;
+  margin-left: 8px;
+  transform: rotate(0deg);
+  transition: transform 0.3s ease;
+}
+
+.create-task-button:hover .dropdown-icon {
+  transform: rotate(180deg);
+}
+
+.dropdown-menu {
+  display: block;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  z-index: 1;
+  padding: 0;
+  margin-top: 5px;
+  width: 100%; /* Match the width of the create-task-button */
+  max-width: 150px; /* Adjust as needed to match button */
+  box-sizing: border-box;
+}
+
+.dropdown-menu a {
+  padding: 10px 20px;
+  display: block;
+  text-decoration: none;
+  color: #2c2c2c;
+  font-size: 16px; /* Match font size with button */
+}
+
+.dropdown-menu a:hover {
+  background-color: #f0f2fc;
+}
+
+.dropdown {
+  font-size: 16px; /* Match font size with button */
+  padding: 10px 20px; /* Match padding with button */
+  border: 2px solid #007bff;
+  border-radius: 8px; /* Match border radius with button */
+  background-color: white;
+  color: #333;
+  width: 100%;
+  max-width: 250px; /* Match max-width with button if needed */
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+}
+
+.dropdown:focus {
+  border-color: #0056b3;
+  outline: none;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .task-page h1 {
+    font-size: 2em;
+  }
+
+  .create-task-button {
+    font-size: 1em;
+    padding: 8px 16px;
+  }
+
+  .dropdown {
+    font-size: 1em;
+    padding: 6px 12px;
+  }
+
+  .dropdown-menu a {
+    font-size: 1em; /* Match font size */
+    padding: 6px 12px; /* Match padding */
+  }
+}
+
+@media (max-width: 480px) {
+  .task-page h1 {
+    font-size: 1.5em;
+  }
+
+  .create-task-button {
+    font-size: 0.9em;
+    padding: 6px 12px;
+  }
+
+  .dropdown {
+    font-size: 0.9em;
+    padding: 6px 12px;
+  }
+
+  .dropdown-menu a {
+    font-size: 0.9em; /* Match font size */
+    padding: 6px 12px; /* Match padding */
+  }
+  
+}

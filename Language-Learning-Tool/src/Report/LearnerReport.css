@@ -1,0 +1,71 @@
+.learner-report-container {
+    padding: 20px;
+  }
+  
+  .header-section {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+  }
+  
+  .controls-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  /* Monthly Report Container */
+  .monthly-report-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  /* Class Report Container */
+  .class-report-container {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f1f1f1;
+    border: 1px solid #ddd;
+  }
+  
+  /* Cards Container */
+  .cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+  }
+  
+  /* Learner Card */
+  .learner-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .learner-card h3 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .learner-card p {
+    font-size: 14px;
+    margin: 10px 0;
+  }
+  
+  .learner-card a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .learner-card a:hover {
+    text-decoration: underline;
+  }
+  
